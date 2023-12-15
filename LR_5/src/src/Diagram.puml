@@ -1,0 +1,43 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface IDrawable {
++ void DrawIcon();
++ String Info();
+}
+
+class Multimedia {
++ String Nazvanie
++ Multimedia (String Naz)
++ String getNaz()
+}
+
+class Images extends Multimedia {
++ String Rasshirenie
++ String Razreshenie
++ Images(String Naz, String Rashir, String Razresh)
+}
+
+class Video extends Multimedia implements IDrawable {
++ String RasshirenieVideo
++ String RazreshenieVideo
++ Video(String Naz, String RashirVideo, String RazreshVideo)
++ void DrawIcon()
++ String Info()
+}
+
+class Rastrovoe extends Images implements IDrawable {
++ String Color_Model
++ Rastrovoe(String Naz, String Rashir, String Razresh, String ColorModel)
++ void DrawIcon()
++ String Info()
+}
+
+class Vectornoe extends Images implements IDrawable {
++ String Raspechatat
++ Vectornoe(String Naz, String Rashir, String Razresh, String Pechat)
++ void DrawIcon()
++ String Info()
+}
+
+@enduml
