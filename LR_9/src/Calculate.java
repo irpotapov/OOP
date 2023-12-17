@@ -22,7 +22,6 @@ public class Calculate extends JFrame {
         JFrame frame = new JFrame();
         frame.setLayout(new GridLayout(3, 1));
 
-        // Первый fieldset "Итерации"
         JPanel iterationsPanel = new JPanel();
         iterationsPanel.setBorder(BorderFactory.createTitledBorder("Итерации"));
         iterationsPanel.setLayout(new GridLayout(2, 2));
@@ -41,7 +40,6 @@ public class Calculate extends JFrame {
         iterationsPanel.add(iterationsSpinnerLabel);
         iterationsPanel.add(iterationsSpinner);
 
-        // Второй fieldset "Переменные"
         JPanel variablesPanel = new JPanel();
         variablesPanel.setBorder(BorderFactory.createTitledBorder("Переменные"));
         variablesPanel.setLayout(new GridLayout(2, 2));
@@ -54,7 +52,6 @@ public class Calculate extends JFrame {
         variablesPanel.add(variable2Label);
         variablesPanel.add(variable2Field);
 
-        // Третий fieldset "Результат"
         JPanel resultPanel = new JPanel();
         resultPanel.setBorder(BorderFactory.createTitledBorder("Результат"));
         resultPanel.setLayout(new GridLayout(4, 1));
@@ -117,7 +114,6 @@ public class Calculate extends JFrame {
             }
         });
 
-        // Добавление fieldset'ов к фрейму
         frame.add(iterationsPanel);
         frame.add(variablesPanel);
         frame.add(resultPanel);
